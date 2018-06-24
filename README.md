@@ -10,6 +10,12 @@ Using native stuff is little hell in almost any other language be it java or Nod
 
 And please remember that your DLLs and LIBs should be compiled with similar compiler as you use for Rust right now. My included natives are done with Microsoft Visual Studio Compiler. Remember that some time ago 32-bit processors were thing. I provided only for 64-bit ones.
 
+And for those who think why code looks like entangled hieroglyphic madness. Idea is somewhat simple. OS provides as API for handling input and Window-things like moving  or actually showing them.
+
+I don't want to call OS API directly so I use GLFW, it is technically a wrapper. But when I want to make some things like set background color I have to use GLEW! Because this is a special thing for working with OpenGL!
+
+That is right. Want a window with green background and see some internals? Please be ready to see some tech guts of all the interactions between libraries, wrappers and etc.
+
 # Windows instructions from scratch
 
  * Install Rust, Cargo with [rustup](https://www.rust-lang.org/en-US/install.html)
