@@ -1,0 +1,5 @@
+[package]
+
+name = "rust-ffi-glfw"
+version = "0.0.1"
+authors = [ "Fedor Rusak <node@fedor-rusak.ru>" ]
