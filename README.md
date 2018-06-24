@@ -2,7 +2,7 @@
 
 Want some fun with Rust and game dev? Well bad news everyone. Everything for rust is unix-oriented and the top gaming OS got short stick.
 
-And I want to do simple example with GLFW using Rust bit by bit. So that it would work and could be compiled on you Windows PC for f%&$ sake!
+And I want to do simple example with GLFW using Rust bit by bit. So that it would work and could be compiled on modern Windows PC for f%&$ sake!
 
 # Some thoughts
 
@@ -16,12 +16,14 @@ I don't want to call OS API directly so I use GLFW, it is technically a wrapper.
 
 That is right. Want a window with green background and see some internals? Please be ready to see some tech guts of all the interactions between libraries, wrappers and etc.
 
+It would be nice to get some proper module usage and provide some type conversion so that c_int, etc. are not used everywhere. But I don't know when this would happen. Enjoy!
+
 # Windows instructions from scratch
 
  * Install Rust, Cargo with [rustup](https://www.rust-lang.org/en-US/install.html)
  * Install [Visual C++ Builds Tools 2015 or later](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
 
-Run this commands
+Run these commands
 
 ```
 cargo build
@@ -33,3 +35,4 @@ PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
 # Libraries used
 
  * [GLFW](https://github.com/glfw/glfw) - zlib/libpng License
+ * [GLEW](https://github.com/nigels-com/glew) -  Modified BSD License, Mesa 3-D License (MIT License), and the Khronos License (MIT License)

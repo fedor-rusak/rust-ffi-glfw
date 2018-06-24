@@ -1,11 +1,9 @@
 use std::ptr;
 use std::ffi::{CString};
 
-use std::os::raw::c_char;
-
 extern crate libc;
 
-use libc::{c_int, c_float, c_void, c_uint};
+use libc::{c_int, c_float, c_void, c_uint, c_char};
 
 #[allow(missing_copy_implementations)]
 pub enum GLFWmonitor {}
@@ -51,7 +49,7 @@ fn main() {
 	println!("Hello from rust-ffi-glfw!");
 
 	unsafe {
-		let string = CString::new("Something".as_bytes()).unwrap(); //tricky stuff. If written in one line string would vanish!
+		let string = CString::new("Hello from rust-ffi-glfw!".as_bytes()).unwrap(); //tricky stuff. If written in one line string would vanish!
 		let title = string.as_bytes_with_nul().as_ptr() as *const c_char;
 
 		glfwInit();
