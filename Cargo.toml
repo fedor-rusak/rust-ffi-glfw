@@ -3,3 +3,7 @@
 name = "rust-ffi-glfw"
 version = "0.0.1"
 authors = [ "Fedor Rusak <node@fedor-rusak.ru>" ]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.23"
