@@ -6,4 +6,8 @@ authors = [ "Fedor Rusak <node@fedor-rusak.ru>" ]
 build = "build.rs"
 
 [dependencies]
+first_lib= "0.1.0"
 libc = "0.2.23"
+
+[patch.crates-io]
+first_lib = { git = "https://github.com/fedor-rusak/first_lib" }

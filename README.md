@@ -36,3 +36,4 @@ PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
 
  * [GLFW](https://github.com/glfw/glfw) - zlib/libpng License
  * [GLEW](https://github.com/nigels-com/glew) -  Modified BSD License, Mesa 3-D License (MIT License), and the Khronos License (MIT License)
+ * https://github.com/fedor-rusak/first_lib - my first library with no License for a moment. So I guess it is not open source...

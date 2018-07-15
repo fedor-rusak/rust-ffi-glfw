@@ -1,3 +1,5 @@
+extern crate first_lib;
+
 use std::ptr;
 use std::ffi::{CString};
 
@@ -85,4 +87,6 @@ fn main() {
 	}
 
 	println!("GLFW window was closed successfully!");
+
+	println!("Answer for evrything is {}!", first_lib::helper::answer_for_everything());
 }
