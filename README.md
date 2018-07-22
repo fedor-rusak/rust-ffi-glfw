@@ -18,14 +18,17 @@ That is right. Want a window with green background and see some internals? Pleas
 
 It would be nice to get some proper module usage and provide some type conversion so that c_int, etc. are not used everywhere. But I don't know when this would happen. Enjoy!
 
+Now at least I can hide all monstrosity inside module. And now I know that if you depend on some git repo you should force cargo to download its source. Dammit!
+
 # Windows instructions from scratch
 
  * Install Rust, Cargo with [rustup](https://www.rust-lang.org/en-US/install.html)
  * Install [Visual C++ Builds Tools 2015 or later](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
 
-Run these commands
+Run these commands:
 
 ```
+cargo update
 cargo build
 cargo run
 ```
@@ -37,3 +40,11 @@ PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
  * [GLFW](https://github.com/glfw/glfw) - zlib/libpng License
  * [GLEW](https://github.com/nigels-com/glew) -  Modified BSD License, Mesa 3-D License (MIT License), and the Khronos License (MIT License)
  * https://github.com/fedor-rusak/first_lib - my first library with no License for a moment. So I guess it is not open source...
+
+# History
+
+## 0.0.2
+  - all fancy stuff inside external module. Yet there are native dependencies inside this repo.
+
+## 0.0.1
+  - initial version with all code in main. Plus some dependency on external custom crate.

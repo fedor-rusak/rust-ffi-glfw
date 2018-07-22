@@ -7,27 +7,11 @@ fn main() {
         let manifest_dir = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
         let mut lib_dir = manifest_dir.clone();
         let mut dll_dir = manifest_dir.clone();
-        lib_dir.push("native");
-        dll_dir.push("native");
-        if target.contains("msvc") {
-            lib_dir.push("msvc");
-            dll_dir.push("msvc");
-        }
-        else {
-            lib_dir.push("gnu-mingw");
-            dll_dir.push("gnu-mingw");
-        }
-        lib_dir.push("lib");
-        dll_dir.push("dll");
-        if target.contains("x86_64") {
-            lib_dir.push("64");
-            dll_dir.push("64");
-        }
-        else {
-            lib_dir.push("32");
-            dll_dir.push("32");
-        }
+        lib_dir.push("native/msvc/lib/64");
+        dll_dir.push("native/msvc/dll/64");
+
         println!("cargo:rustc-link-search=all={}", lib_dir.display());
+
         for entry in std::fs::read_dir(dll_dir).expect("Can't read DLL dir")  {
             let entry_path = entry.expect("Invalid fs entry").path();
             let file_name_result = entry_path.file_name();

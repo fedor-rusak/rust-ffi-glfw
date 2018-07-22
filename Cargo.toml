@@ -1,12 +1,11 @@
 [package]
 
 name = "rust-ffi-glfw"
-version = "0.0.1"
+version = "0.0.2"
 authors = [ "Fedor Rusak <node@fedor-rusak.ru>" ]
-build = "build.rs"
 
 [dependencies]
-first_lib= "0.1.0"
+first_lib= "0.1.1"
 libc = "0.2.23"
 
 [patch.crates-io]
