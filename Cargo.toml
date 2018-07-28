@@ -5,8 +5,8 @@ version = "0.0.2"
 authors = [ "Fedor Rusak <node@fedor-rusak.ru>" ]
 
 [dependencies]
-first_lib= "0.1.1"
+render_lib= "0.1.3"
 libc = "0.2.23"
 
 [patch.crates-io]
-first_lib = { git = "https://github.com/fedor-rusak/first_lib", branch="vulcano" }
+render_lib = { git = "https://github.com/fedor-rusak/render_lib", branch="vulcano" }

@@ -27,12 +27,10 @@ This is now officially an example repo for using first_lib. And for development 
  * Install Rust, Cargo with [rustup](https://www.rust-lang.org/en-US/install.html)
  * Install [Visual C++ Builds Tools 2015 or later](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15)
 
-Run these commands:
+Run this command in CMD. While being in ROOT folder:
 
 ```
-cargo update
-cargo build
-cargo run
+run.bat
 ```
 
 PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
@@ -42,7 +40,7 @@ PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
  * [GLFW](https://github.com/glfw/glfw) - zlib/libpng License
  * [GLEW](https://github.com/nigels-com/glew) -  Modified BSD License, Mesa 3-D License (MIT License), and the Khronos License (MIT License)
  * [Vulkan loader](https://www.lunarg.com/vulkan-sdk/) - Apache License, Version 2.0
- * https://github.com/fedor-rusak/first_lib - my first library with no License for a moment. So I guess it is not open source...
+ * https://github.com/fedor-rusak/render_lib - my first library (still!) with no License
 
 # History
 
