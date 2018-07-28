@@ -9,4 +9,4 @@ first_lib= "0.1.1"
 libc = "0.2.23"
 
 [patch.crates-io]
-first_lib = { git = "https://github.com/fedor-rusak/first_lib" }
+first_lib = { git = "https://github.com/fedor-rusak/first_lib", branch="vulcano" }

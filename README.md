@@ -20,6 +20,8 @@ It would be nice to get some proper module usage and provide some type conversio
 
 Now at least I can hide all monstrosity inside module. And now I know that if you depend on some git repo you should force cargo to download its source. Dammit!
 
+This is now officially an example repo for using first_lib. And for development purposes I use feature of cargo for getting crate from specific branch. And ho-ho-ho it is vulcano branch! PS It is a branch name pointing to a fact that I am playing with Vulkan API.
+
 # Windows instructions from scratch
 
  * Install Rust, Cargo with [rustup](https://www.rust-lang.org/en-US/install.html)
@@ -39,6 +41,7 @@ PS Behind proxy set environment variables *http_proxy* and *https_proxy*.
 
  * [GLFW](https://github.com/glfw/glfw) - zlib/libpng License
  * [GLEW](https://github.com/nigels-com/glew) -  Modified BSD License, Mesa 3-D License (MIT License), and the Khronos License (MIT License)
+ * [Vulkan loader](https://www.lunarg.com/vulkan-sdk/) - Apache License, Version 2.0
  * https://github.com/fedor-rusak/first_lib - my first library with no License for a moment. So I guess it is not open source...
 
 # History
